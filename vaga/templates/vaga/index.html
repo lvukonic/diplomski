@@ -1,0 +1,9 @@
+{% load static %}
+
+<link rel = "stylesheet" type"text/css" href="{% static 'vaga/css/bootstrap.min.css'%}" />
+
+<H1>DOBRODOŠLI U VAGANJE </H1>
+
+<a href = "{% url 'quickWeigh' %}"><button type="button" class="btn btn-primary btn-lg">Quick Weigh in</button></a>
+<a href = "{% url 'detailWeigh' %}"><button type="button" class="btn btn-success btn-lg">Detailed Weigh In</button></a>
+

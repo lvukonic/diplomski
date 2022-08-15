@@ -7,4 +7,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("jao bre")
+    
+    return render(request, 'vaga/index.html')
+    
+def quickWeigh(request):
+    return render(request, 'vaga/quickWeigh.html')
+    
+def detailWeigh(request):
+    return render(request, 'vaga/detailWeigh.html')
